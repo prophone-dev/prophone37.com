@@ -863,7 +863,7 @@
     <div
         x-data="{
         activeImage: 1,
-        amountOfImages: 4,
+        amountOfImages: 1,
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
@@ -883,68 +883,9 @@
             x-transition:leave-end="transform -translate-x-full"
         >
             
-                <img
-                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JI985I82OT22Z56E3REFSBGMFKIWDRM49MKCUJRF.jpeg"
-                    alt="property management company 37 ProPhone in Boston, Massachusetts"
-                />
-            
-        </div>
-        
-        <div
-            class="absolute inset-0"
-            x-show="activeImage === 2"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            
-                <img
-                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/20103d7f-db5f-4585-8505-a5e32112db5e.png"
-                    alt="property management company 37 ProPhone in Boston, Massachusetts"
-                />
-            
-        </div>
-        
-        <div
-            class="absolute inset-0"
-            x-show="activeImage === 3"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            
-                <img
-                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/bbf16225-d1ac-4d9f-ac65-c7622a6f150a.png"
-                    alt="property management company 37 ProPhone in Boston, Massachusetts"
-                />
-            
-        </div>
-        
-        <div
-            class="absolute inset-0"
-            x-show="activeImage === 4"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            
-                <img
-                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/18e6a52e-c359-47d5-b66a-57502611c664.png"
-                    alt="property management company 37 ProPhone in Boston, Massachusetts"
-                />
+                <video class="object-contain w-full lg:absolute h-80 lg:h-full" autoplay loop playsinline muted>
+                    <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HDTC6OB3D5X9YW5BL5V3WTGUGIN4JIV37HFKLJ24.mp4" type = "" >
+                </video>
             
         </div>
         
